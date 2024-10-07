@@ -1,3 +1,4 @@
+from pg.guatemala import plate_guatemala
 from pg.united_kingdom import plate_uk
 from pg.universal import vrpg_universal
 import os
@@ -14,6 +15,8 @@ def vrpg(country: str = None,
     result = None
     if country == 'UK':
         result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_uk(), plate_type=plate_type)
+    elif country == 'Guatemala':
+        result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_guatemala(), plate_type=plate_type)
     # elif country == 'US_California':
     #     result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_usa_california_1963(), plate_type=plate_type)
 
