@@ -9,6 +9,7 @@ Contents
 * [Why?](#why)
 * [Updates](#Updates)
 * [Getting Started](#getting-started)
+* [Chile plates](#chile-plates)
 * [Guatemala plates](#guatemala-plates)
 * [UK plates](#uk-plates)
 
@@ -18,10 +19,14 @@ Contents
 I wanted a tool that allows you to:
 
 + Improve ANPR dataset
++ Generate all types of Chile registration plates
 + Generate all types of Guatemala registration plates
 + Generate all types of UK registration plates
 
 ## Updates
+
+[2024-10-08] VRPG v0.0.3 is released.
+- Chile Vehicle Registration Plate Generator.
 
 [2024-10-07] VRPG v0.0.2 is released.
 - Guatemala Vehicle Registration Plate Generator.
@@ -35,6 +40,7 @@ Supported countries:
 
 | Country   | Font name                | Font link to download                                           | Reference                                                                                                          |
 |-----------|--------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Chile     | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Chile)                               |
 | Guatemala | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://www.guatecompras.gt/concursos/files/2259/11294345%40ESPECIFICACIONES%20TECNICAS%20PLACAS.pdf)       |
 | UK        | Charles Wright           | [Link](https://www.k-type.com/fonts/charles-wright/)            | [Link](https://www.gov.uk/government/publications/vehicle-registration-numbers-and-number-plates)                  |
 
@@ -66,7 +72,32 @@ if __name__ == '__main__':
     print(result)
 ```
 
-## Guatemala plates
+## Chile plates
+
+Supported plate types
+
+| Country   | Plate type               |
+|-----------|--------------------------|
+| Chile | 'Vehiculo particular', 'Taxi básico', 'Taxi colectivo', 'Radiotaxi vehiculos de turismo', 'Buses de Transantiago', 'Vehículos adquiridos en Zona Franca', 'Remolques de peso bruto mayor a 3860kg', 'Remolques de peso bruto menor a 3860kg', 'Cuerpo diplomático', 'Vehiculos de carabineros', 'Inscripsion provisoria', 'Fuerzas Armadas', 'Bomberos' |
+
+ Plate type | Images               |
+|-----------|--------------------------|
+| 'Vehiculo particular' | ![Chile Vehiculo particular plate](help/img/Chile/Chile-Vehiculo-particular.png) | 
+| 'Taxi básico' | ![Chile Taxi básico plate](help/img/Chile/Chile-Taxi-básico.png) | 
+| 'Taxi colectivo' | ![Chile Taxi colectivo plate](help/img/Chile/Chile-Taxi-colectivo.png) | 
+| 'Radiotaxi vehiculos de turismo' | ![Chile Radiotaxi vehiculos de turismo plate](help/img/Chile/Chile-Radiotaxi-vehiculos-de-turismo.png) | 
+| 'Buses de Transantiago' | ![Chile Buses de Transantiago plate](help/img/Chile/Chile-Buses-de-Transantiago.png) | 
+| 'Vehículos adquiridos en Zona Franca' | ![Chile Vehículos adquiridos en Zona Franca plate](help/img/Chile/Chile-Vehículos-adquiridos-en-Zona-Franca.png) | 
+| 'Remolques de peso bruto mayor a 3860kg' | ![Chile Remolques de peso bruto mayor a 3860kg plate](help/img/Chile/Chile-Remolques-de-peso-bruto-mayor-a-3860kg.png) | 
+| 'Remolques de peso bruto menor a 3860kg' | ![Chile Remolques de peso bruto menor a 3860kg plate](help/img/Chile/Chile-Remolques-de-peso-bruto-menor-a-3860kg.png) | 
+| 'Cuerpo diplomático' | ![Chile Cuerpo diplomático plate](help/img/Chile/Chile-Cuerpo-diplomático.png) | 
+| 'Vehiculos de carabineros' | ![Chile Vehiculos de carabineros plate](help/img/Chile/Chile-Vehiculos-de-carabineros.png) | 
+| 'Inscripsion provisoria' | ![Chile Inscripsion provisoria plate](help/img/Chile/Chile-Inscripsion-provisoria.png) | 
+| 'Fuerzas Armadas' | ![Chile Fuerzas Armadas plate](help/img/Chile/Chile-Fuerzas-Armadas.png) | 
+| 'Bomberos' | ![Chile Bomberos plate](help/img/Chile/Chile-Bomberos.png) | 
+
+
+ # Guatemala plates
 
 Supported plate types
 
