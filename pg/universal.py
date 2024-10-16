@@ -578,15 +578,17 @@ def vrpg_universal(font: str = None,
             end_x = int(pnpi * e['end_x'])
             wave_width = int(pnpi * e['wave_width'])
             amplitude = int(pnpi * e['wave_amplitude'])
-            wave_phase = int(pnpi * e['wave_phase'])
-            frequency = 0.02908882086657216  # Adjust the frequency as needed
-            offset = int(pnpi * e['start_y'])  # Vertical offset
-
+            wave_period = int(pnpi * e['wave_period'])
+            wave_phase = pnpi * e['wave_phase']
+            offset = pnpi * e['start_y']  # Vertical offset
+            wave_step = (2 * math.pi) / wave_period
             # Draw the sine wave
+            frequency = 0
             for x in range(start_x, end_x):
-                y = int(amplitude * math.sin(frequency * (x + wave_phase)) + offset)
-                # draw.point((x, y), fill=e['fill_color'])
-                # Draw multiple points to create a wider line
+                y = int(amplitude * math.sin(frequency + (wave_step * wave_phase)) + offset)
+                frequency += wave_step
+                if frequency >= wave_period:
+                    frequency = 0
                 for i in range(-wave_width // 2, wave_width // 2 + 1):
                     draw.point((x, y + i), fill=e['fill_color'])
 
