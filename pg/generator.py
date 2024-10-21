@@ -3,6 +3,7 @@ from pg.bolivia import plate_bolivia
 from pg.chile import plate_chile
 from pg.guatemala import plate_guatemala
 from pg.ecuador import plate_ecuador
+from pg.peru import plate_peru
 from pg.united_kingdom import plate_uk
 from pg.universal import vrpg_universal
 import os
@@ -27,6 +28,8 @@ def vrpg(country: str = None,
         result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_guatemala(), plate_type=plate_type)
     elif country == 'Ecuador':
         result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_ecuador(), plate_type=plate_type)
+    elif country == 'Peru':
+        result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_peru(), plate_type=plate_type)
     elif country == 'UK':
         result = vrpg_universal(font=font, directory=directory, dpi=dpi, area=plate_uk(), plate_type=plate_type)
     # elif country == 'US_California':

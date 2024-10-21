@@ -14,6 +14,7 @@ Contents
 * [Chile plates](#chile-plates)
 * [Guatemala plates](#guatemala-plates)
 * [Ecuador plates](#ecuador-plates)
+* [Peru plates](#peru-plates)
 * [UK plates](#uk-plates)
 
 
@@ -27,9 +28,13 @@ I wanted a tool that allows you to:
 + Generate all types of Chile registration plates
 + Generate all types of Guatemala registration plates
 + Generate all types of Ecuador registration plates
++ Generate all types of Peru registration plates
 + Generate all types of UK registration plates
 
 ## Updates
+
+[2024-10-17] VRPG v0.0.5 is released.
+- Peru Vehicle Registration Plate Generator.
 
 [2024-10-16] VRPG v0.0.4 is released.
 - Bolivia, Argentina, Ecuador Vehicle Registration Plate Generator.
@@ -49,14 +54,15 @@ Supported countries:
 
 | Country   | Font name                | Font link to download                                           | Reference                                                                                                          |
 |-----------|--------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Argentina | FE-Schrift, Arial Narrow, Arimo-SemiBold, NotoSerif-Medium | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/), [Link](https://fonts.google.com/specimen/Arimo/), [Link](https://fonts.google.com/noto/specimen/Noto+Serif/)  | [Link](https://www.guatecompras.gt/concursos/files/2259/11294345%40ESPECIFICACIONES%20TECNICAS%20PLACAS.pdf)       |
+| Argentina | FE-Schrift, Arial Narrow, Arimo-SemiBold, NotoSerif-Medium | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/), [Link](https://fonts.google.com/specimen/Arimo/), [Link](https://fonts.google.com/noto/specimen/Noto+Serif/)  | [Link](https://www.casademoneda.gob.ar/wp-content/uploads/2019/08/ESPEC.-TECNICAS2.pdf) |
 | Bolivia   | Roadgeek 2005 Series 1B, Traffic 02, Arial Narrow | [Link](https://fonts2u.com/roadgeek-2005-series-1b.font/), [Link](https://fonts2u.com/traffic-02.font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Bolivia)                               |
 | Chile     | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Chile)                               |
 | Guatemala | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://www.guatecompras.gt/concursos/files/2259/11294345%40ESPECIFICACIONES%20TECNICAS%20PLACAS.pdf)       |
 | Ecuador   | FE-Fschrift, Arial Narrow| [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Ecuador)|
+| Peru      | FE-Schrift, Helvetica Bold Condensed | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/) [Link](https://fontsgeek.com/fonts/helvetica-bold-condensed/)| [Link](https://portal.mtc.gob.pe/transportes/terrestre/documentos/Exposici%C3%B3n%20de%20motivos%20-%20Placas.pdf) |
 | UK        | Charles Wright           | [Link](https://www.k-type.com/fonts/charles-wright/)            | [Link](https://www.gov.uk/government/publications/vehicle-registration-numbers-and-number-plates)                  |
 
-Please download the font files to create vehicle license plate. Upload these files to fonts directory. The font files are not included in the GitHub repository due to potential copyright concerns. 
+Please download the font files to create vehicle license plate. Upload these files to fonts directory in your project. The font files are not included in the GitHub repository due to potential copyright concerns. 
 
 An example of usage with font name = None (create directory /fonts/ first, font file downloaded to the /fonts/ directory):
 
@@ -73,16 +79,7 @@ The UK output images will be:
 ![UK white plate](help/img/UK/w.png)
 ![UK yellow plate](help/img/UK/y.png)
 
-An example of usage with font name = absolute path:
 
-``` shell
-from pg.generator import *
-
-
-if __name__ == '__main__':
-    result = vrpg(country='UK', font='F:/py/vrpg/fonts/CharlesWright-Bold.otf', directory='d:/temp/img/', dpi=150, plate_type='random')
-    print(result)
-```
 ## Argentina plates
 
 Supported plate types
@@ -193,6 +190,31 @@ Supported plate types
 | 'Policía Nacional del Ecuador' | ![Ecuador Policía Nacional del Ecuador plate](help/img/Ecuador/Ecuador-2012-AWP-8632-16_Oct_2024-09_56_41.png) | 
 
 
+## Peru plates
+
+Supported plate types
+
+| Country   | Plate type               |
+|-----------|--------------------------|
+| Peru      | 'Automóvil', 'Taxi', 'Bus urbano', 'Bus interprovincial', 'Remolque', 'Camión', 'Emergencia', 'Exhibición', 'Gracia', 'Gubernamental', 'Policial', 'Rotativa', 'Temporal', 'Motocicleta grande', 'Motocicleta pequeña' |
+
+
+ Plate type | Images               |
+|-----------|--------------------------|
+| 'Automóvil'        | ![Peru Automóvil plate](help/img/Peru/Peru-Automóvil.png) | 
+| 'Taxi'        | ![Peru Taxi plate](help/img/Peru/Peru-Taxi.png) | 
+| 'Bus interprovincial'        | ![Peru Bus interprovincial plate](help/img/Peru/Peru-Bus-interprovincial.png) | 
+| 'Remolque'        | ![Peru Remolque plate](help/img/Peru/Peru-Remolque.png) | 
+| 'Camión'        | ![Peru Camión plate](help/img/Peru/Peru-Camión.png) | 
+| 'Emergencia'        | ![Peru Emergencia plate](help/img/Peru/Peru-Emergencia.png) | 
+| 'Exhibición'        | ![Peru Exhibición plate](help/img/Peru/Peru-Exhibición.png) | 
+| 'Gracia'        | ![Peru Gracia plate](help/img/Peru/Peru-Gracia.png) | 
+| 'Gubernamental'        | ![Peru Gubernamental plate](help/img/Peru/Peru-Gubernamental.png) | 
+| 'Policial'        | ![Peru Policial plate](help/img/Peru/Peru-Policial.png) | 
+| 'Rotativa'        | ![Peru Rotativa plate](help/img/Peru/Peru-Rotativa.png) | 
+| 'Temporal'        | ![Peru Temporal plate](help/img/Peru/Peru-Temporal.png) | 
+| 'Motocicleta grande' | ![Peru Motocicleta grande plate](help/img/Peru/Peru-Motocicleta-grande.png) | 
+| 'Motocicleta pequeña'        | ![Peru Motocicleta pequeña plate](help/img/Peru/Peru-Motocicleta.png) | 
 
 
 
