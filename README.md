@@ -10,6 +10,7 @@ Contents
 * [Updates](#Updates)
 * [Getting Started](#getting-started)
 * [Argentina plates](#argentina-plates)
+* [Bermuda plates](#bermuda-plates)
 * [Bolivia plates](#bolivia-plates)
 * [Chile plates](#chile-plates)
 * [Guatemala plates](#guatemala-plates)
@@ -24,6 +25,7 @@ I wanted a tool that allows you to:
 
 + Improve ANPR dataset
 + Generate all types of Argentina registration plates
++ Generate all types of Bermuda registration plates
 + Generate all types of Bolivia registration plates
 + Generate all types of Chile registration plates
 + Generate all types of Guatemala registration plates
@@ -32,6 +34,9 @@ I wanted a tool that allows you to:
 + Generate all types of UK registration plates
 
 ## Updates
+
+[2024-10-25] VRPG v0.0.6 is released.
+- Bermuda Vehicle Registration Plate Generator.
 
 [2024-10-17] VRPG v0.0.5 is released.
 - Peru Vehicle Registration Plate Generator.
@@ -55,6 +60,7 @@ Supported countries:
 | Country   | Font name                | Font link to download                                           | Reference                                                                                                          |
 |-----------|--------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Argentina | FE-Schrift, Arial Narrow, Arimo-SemiBold, NotoSerif-Medium | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/), [Link](https://fonts.google.com/specimen/Arimo/), [Link](https://fonts.google.com/noto/specimen/Noto+Serif/)  | [Link](https://www.casademoneda.gob.ar/wp-content/uploads/2019/08/ESPEC.-TECNICAS2.pdf) |
+| Bermuda   | Charles Wright           | [Link](https://www.k-type.com/fonts/charles-wright/)            | [Link](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Bermuda)                  |
 | Bolivia   | Roadgeek 2005 Series 1B, Traffic 02, Arial Narrow | [Link](https://fonts2u.com/roadgeek-2005-series-1b.font/), [Link](https://fonts2u.com/traffic-02.font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Bolivia)                               |
 | Chile     | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://es.wikipedia.org/wiki/Matr%C3%ADculas_automovil%C3%ADsticas_de_Chile)                               |
 | Guatemala | FE-Schrift, Arial Narrow | [Link](https://www.andyhoppe.com/design/fonts/euro-plate-font/), [Link](https://online-fonts.com/fonts/arial-narrow/) | [Link](https://www.guatecompras.gt/concursos/files/2259/11294345%40ESPECIFICACIONES%20TECNICAS%20PLACAS.pdf)       |
@@ -103,7 +109,28 @@ Supported plate types
 | 'Motocicleta particular' | ![Argentina Motocicleta particular plate](help/img/Argentina/Argentina-2014-BP854SP-16_Nov_2023-18_09_13.png) | 
 | 'Motocicleta restricted' | ![Argentina Motocicleta restricted plate](help/img/Argentina/Argentina-2014-AA053NL-16_Nov_2023-18_09_07.png) | 
 
+## Bermuda plates
 
+Supported plate types
+
+| Country   | Plate type               |
+|-----------|--------------------------|
+| Bermuda   | 'Private', 'Classic', 'Light truck', 'Intermediate truck', 'Heavy truck', 'Light private', 'Taxi', 'Construction', 'Electric for tourist', 'US forces', 'Auxiliary cycle', 'Motorcycle' |
+
+| Plate type | Images               |
+|-----------|--------------------------|
+| 'Private' | ![Bermuda Private plate](help/img/Bermuda/Bermuda-1975-41753-25_Oct_2024-11_16_00.png) | 
+| 'Classic' | ![Bermuda Classic plate](help/img/Bermuda/Bermuda-Classic.png) | 
+| 'Light truck' | ![Bermuda Light truck plate](help/img/Bermuda/Bermuda-Light-truck.png) | 
+| 'Intermediate truck' | ![Bermuda Intermediate truck plate](help/img/Bermuda/Bermuda-Intermediate-truck.png) | 
+| 'Heavy truck' | ![Bermuda Heavy truck plate](help/img/Bermuda/Bermuda-Heavy-truck.png) | 
+| 'Light private' | ![Bermuda Light private plate](help/img/Bermuda/Bermuda-Light-private.png) | 
+| 'Taxi' | ![Bermuda Taxi plate](help/img/Bermuda/Bermuda-Taxi.png) | 
+| 'Construction' | ![Bermuda Construction plate](help/img/Bermuda/Bermuda-Construction.png) | 
+| 'Electric for tourist' | ![Bermuda Electric for tourist plate](help/img/Bermuda/Bermuda-Electric-for-tourist.png) | 
+| 'US forces' | ![Bermuda US forces plate](help/img/Bermuda/Bermuda-US-forces.png) | 
+| 'Auxiliary cycle' | ![Bermuda Auxiliary cycle plate](help/img/Bermuda/Bermuda-Auxiliary-cycle.png) | 
+| 'Motorcycle' | ![Bermuda Motorcycle plate](help/img/Bermuda/Bermuda-Motorcycle.png) | 
 
 
 ## Bolivia plates
